@@ -151,8 +151,6 @@ hr{
 #section3 .row{
     padding: 50px 0;
 }
-#section3 .col{
-}
 #section3 .col-1{
     display: flex;
     flex-direction: column;
@@ -194,7 +192,6 @@ hr{
     color: white;
     margin: 20px;
     width: fit-content;
-    height:;
     padding: 10px 20px;
     border-radius: 30px;
 }
