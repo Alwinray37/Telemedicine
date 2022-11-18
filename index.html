@@ -21,7 +21,7 @@
     <meta name="language" content="English"/> 
 
     <!-- linking CSS stylesheet -->
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
     <nav>
@@ -30,11 +30,11 @@
         <a href="#">Contact Me</a>
     </nav>
    <main class="wrapper" id="main">
-    <section class="hero-section">
-        <div class="col-1">
+    <section class="hero-section" id="hero">
+        <div class="col col-1">
             <img src="./images/tom_partner_2022.jpeg" alt="">
         </div>
-        <div class="col-2">
+        <div class="col col-2">
             <p>Dwight Partner, NP</p>
             <h1>Telemedicine Services Serving Arizona and Nevada</h1>
             <h3>Telehealth Medicine for Arizona and Nevada</h3>
@@ -45,14 +45,18 @@
         </div>
     </section>
     <div class="jump" id="jumpNav">
-        <a href="#">Urgent Care</a>
-        <a href="#">STD's</a>
-        <a href="#">Women's Health</a>
-        <a href="#">Men's Health</a>
-        <a href="#">Psychiatry</a>
-        <a href="#">Chronic Illnesses</a>
-        <a href="#">Dermatology</a>
-        <a href="#">Miscellaneous</a>
+        <div class="row col-1">
+            <a href="#">Urgent Care</a>
+            <a href="#">STD's</a>
+            <a href="#">Women's Health</a>
+            <a href="#">Men's Health</a>
+        </div>
+        <div class="row col-2">
+            <a href="#">Psychiatry</a>
+            <a href="#">Chronic Illnesses</a>
+            <a href="#">Dermatology</a>
+            <a href="#">Miscellaneous</a>
+        </div>
     </div>
 
     <section class="what-you-might-need wrapper section2" id="section2">
@@ -63,7 +67,7 @@
             <div class="col">Free Follow-Up Call</div>
         </div>
         <h2>What you might need:</h2>
-        <div class="row">
+        <div class="row row-2">
             <div class="col-1 col card"><h4>Thermometer</h4><img src="./images/thermometer.png" alt=""></div>
             <div class="col-2 col card"><h4>Pulse Oximeter</h4><img src="./images/pulse-oximeter.png" alt=""></div>
             <div class="col-3 col card"><h4>Sphygmomanometer</h4><img src="./images/blood-pressure-machine.png" alt=""></div>
@@ -76,9 +80,9 @@
             <div class="col col-1">
                 <div class="contentSum">
                     <h2>Urgent Care</h2>
-                    <p>Telemedicine performs an importnat role as a cost-effecive alternative to urgent care. For non-emergencies, online doctors offer great care and prescription antibiotics to tackle common infections</p>
+                    <p>Telemedicine performs an important role as a cost-effecive alternative to urgent care. For non-emergencies, online doctors offer great care and prescription antibiotics to tackle common infections</p>
                 </div>
-                <div class="links">
+                <div class="two-links">
                     <a href="#">Alphabetical List of All Disorders Covered</a>
                     <a href="#main">Back to the Top</a>
                 </div>
@@ -121,5 +125,16 @@
         </div>
     </section>
    </main>
+   <footer>
+        <div class="contact">
+            <a href="mailto:">myemail@gmail.com</a>
+            <a href="tel:+">310-123-45678</a>
+        </div>
+        <div class="copyright">
+            <p>Copyright &copy; 2022, Dwight Partner, NP</p>
+            <p>Site Design by Alwin Ray Roble</p>
+            <p></p>
+        </div>
+   </footer>
 </body>
 </html>

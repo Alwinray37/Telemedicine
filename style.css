@@ -32,6 +32,7 @@
     }
     a:hover{
     color: var(--second-blue);
+    text-decoration: underline;
     }
 /* navigation bar at the top */
 nav{
@@ -56,7 +57,7 @@ nav a:hover{
 color: var(--main-blue);
 }
 /* centers main content */
-main, .wrapper{
+.wrapper{
 display: flex;
 flex-direction: column;
 width: 100%;
@@ -72,7 +73,7 @@ display: flex;
 justify-content: space-around;
 align-items: center;
 flex-wrap: wrap;
-background-color: var(--light-blue);
+background-color: white;
 text-align: center;
 }
 .hero-section .col-1{
@@ -83,11 +84,11 @@ align-items: center;
 justify-content: flex-end;
 }
 .hero-section .col-1 img {
-max-height: 500px;
-border-radius: 15px 15px 0 0;
+width: 400px;
 }
 .hero-section .col-2{
 height: 100%;
+width: 100%;
 padding: 50px 10px;
 display: flex;
 flex-direction: column;
@@ -118,10 +119,11 @@ background-color: var(--light-orange);
 }
   /* "Jump" navigation ********/
 #jumpNav{
-    height: 50px;
+    min-height: 50px;
     background-color: var(--main-orange);
     width: 100%;
     display: flex;
+    align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
 }
@@ -131,13 +133,17 @@ background-color: var(--light-orange);
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
+    height: 50px;
     flex: 1;
-    padding: 0 5px;
+    padding: 10px 5px;
+    border-right: 1px solid black;
 }
 #jumpNav a:hover{
     background-color: var(--light-orange);
     color: black;
+}
+#jumpNav .row{
+    width: 50%;
 }
 /* section 2: what you might need */
 .what-you-might-need{
@@ -211,6 +217,15 @@ margin: 40px;
     align-items: center;
 }
 #section3 .col-2 a:hover{
-    background-color: var(--light-blue);
-    color: black;
+    color: blue;
+    text-decoration: underline;
+}
+
+/* Footer */
+footer{
+    width: 100%;
+    min-height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
