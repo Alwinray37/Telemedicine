@@ -25,8 +25,8 @@
 </head>
 <body>
     <nav>
-        <a href="index.html">Home</a>
-        <a href="#">List Of All Disorders</a>
+        <a href="index.html">Home</a> <div class="vr"></div>
+        <a href="#">All Disorders</a> <div class="vr"></div>
         <a href="#">Contact Me</a>
     </nav>
    <main class="wrapper" id="main">
@@ -39,8 +39,8 @@
             <h1>Telemedicine Services Serving Arizona and Nevada</h1>
             <h3>Telehealth Medicine for Arizona and Nevada</h3>
             <div class="hero-cta">
-                <a href="#" class="cta-btn">Schedule an Appointment</a>
-                <a href="#" class="cta-btn">Or Call Now!</a>
+                <a href="#" class="cta-btn" id="schedule-btn">Schedule an Appointment</a>
+                <a href="#" class="cta-btn" id="hero-call-now">Call Now!</a>
             </div>
         </div>
     </section>
@@ -123,6 +123,47 @@
                 <a href="#">Yeast Infection</a>
             </div>
         </div>
+        <hr>
+        <div class="row" id="STD">
+            <div class="col col-1">
+                <div class="contentSum">
+                    <h2>Sexually Related Diseases & Disorders</h2>
+                    <p>I diagnose and treat a wide range of sexually transmitted infections from the comfort of your home. No awkward face to face or video visit. Simly tell us your symptoms or upload your test result to get a a prescription.</p>
+                </div>
+                <div class="two-links">
+                    <a href="#">Alphabetical List of All Disorders Covered</a>
+                    <a href="#main">Back to the Top</a>
+                </div>
+            </div>
+            <div class="col col-2">
+                <a href="#">Bacteria Vaginosis (BV)</a>
+                <a href="#">Chlamydia</a>
+                <a href="#">Erectile Dysfunction (ED)</a>
+                <a href="#">Ghonorrhea</a>
+                <a href="#">HIV Exposure (PEP)</a>
+                <a href="#">HIV Prevention (PREP)</a>
+                <a href="#">HIV Treatment</a>
+                <a href="#">Premature Ejaculation</a>
+                <a href="#">Low Testosterone</a>
+                <a href="#">Yeast Infection</a>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="scheduler">
+        <!-- Calendly inline widget begin -->
+        <!-- <div class="calendly-inline-widget" data-url="https://calendly.com/alwinray/meeting" style="min-width:320px;height:630px;"></div>
+        <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script> -->
+        <!-- Calendly inline widget end -->
+
+        <!-- Calendly badge widget begin -->
+        <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+        <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+        <script type="text/javascript">window.onload = function() { Calendly.initBadgeWidget({ url: 'https://calendly.com/alwinray/meeting', text: 'Schedule time with me', color: '#05d0eb', textColor: 'black', branding: true }); }
+
+        </script>
+        <!-- Calendly badge widget end -->
     </section>
    </main>
    <footer>
@@ -136,5 +177,18 @@
             <p></p>
         </div>
    </footer>
+   <script>
+    let calendly = document.querySelector('.calendly-badge-widget');
+    const scheduleBtn = document.querySelector('#schedule-btn');
+    const callNow = document.querySelector('#hero-call-now');
+
+    callNow.addEventListener('click', e => alert('btn has been clicked'));
+
+    setTimeout(btnClick(), 1000);
+    function btnClick(){
+        let calendly = document.querySelector('.calendly-badge-content');
+        scheduleBtn.addEventListener('click', e => calendly.click());
+    }
+   </script>
 </body>
 </html>

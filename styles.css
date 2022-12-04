@@ -32,9 +32,11 @@ a:hover{
 nav{
     height: 50px;
     display: flex;
+    align-items: center;
     position: fixed;
     width: 100%;
     background-color: white;
+    box-shadow: 0 0 10px -2px;
 }
 nav a{
     height: 100%;
@@ -43,9 +45,19 @@ nav a{
     justify-content: center;
     align-items: center;
 }
+nav a:hover{
+    text-decoration: none;
+}
+nav .vr{
+    background-color: black;
+    height: 40px;
+    width: 1px;
+}
 #hero{ 
     display: flex;
     flex-direction: column;
+    background-color: #044abc;
+    color: white;
 }
 #hero img{
     width: 100%;
@@ -54,9 +66,14 @@ nav a{
 }
 #hero h1{
     margin: 20px;
+    font-size: 2em;
 } 
 #hero h3{
-    margin: 0 0 20px 0;
+    
+    font-size: 1.5em;
+}
+#hero p{
+    margin: 10px;
 }
 #hero .col{
     display: flex;
@@ -76,12 +93,17 @@ nav a{
     max-width: 500px;
 }
 #hero .cta-btn{
-    padding: 10px;
-    margin: 20px 0;
-    background-color: var(--main-blue);
+    padding: 10px 20px;
+    margin: 30px 0;
+    color: white;
+    background-color: var(--second-blue);
+    box-shadow: 0 0 5px ;
 }
 .cta-btn:hover{
-    border: 2px solid black;
+    /* border: 2px solid black; */
+    text-decoration: none;
+    transition: .5s ease-in-out;
+    transform: scale(1.1);
 }
 #jumpNav{
     display: flex;
@@ -90,7 +112,7 @@ nav a{
     align-items: center;
     background-color: var(--main-orange);
     width: 100%;
-    margin: 0 0 20px 0;
+    margin: 0 0 50px 0;
 }
 #jumpNav .row{
     width: 100%;
@@ -115,6 +137,7 @@ nav a{
 #jumpNav .row a:hover{
     background-color: var(--light-orange);
     color: var(--second-blue);
+    text-decoration: none;
 }
 /* section 2 */
 #section2{
@@ -132,6 +155,7 @@ nav a{
     height: 200px;
 }
 .card{
+    background-color: rgb(245, 245, 245);
     border-radius: 10px;
     box-shadow: 0 0 10px 0 gray;
     height: 300px;
@@ -156,11 +180,36 @@ hr{
     flex-direction: column;
     justify-content: space-around;
     min-height: 400px;
+    background-color: var(--main-orange);
+    color: white;
+    border-radius: 10px;
+    margin: 20px;
 }
 .contentSum{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+}
+.contentSum h2{
+    margin: 0 0 20px 0;
+    font-size: 3rem;
+    text-shadow: 2px 0 0 #000, 0 -2px 0 #000, 0 2px 0 #000, -2px 0 0 #000;
+}
+.contentSum p{
+    letter-spacing: 1px;
+    padding: 10px;
+}
+.two-links{
+    display: flex;
+    flex-direction: column;
+}
+.two-links a{
+    background-color: var(--second-blue);
+    color: white;
+    margin: 10px;
+    width: fit-content;
+    padding: 10px 20px;
+    border-radius: 30px;
 }
 #section3 .col-2{
     display: flex;
@@ -177,25 +226,6 @@ hr{
     align-items: center;
     padding: 10px;
 }
-.contentSum h2{
-    margin: 0 0 20px 0;
-}
-.contentSum p{
-    padding: 10px;
-}
-.two-links{
-    display: flex;
-    flex-direction: column;
-}
-.two-links a{
-    background-color: var(--second-blue);
-    color: white;
-    margin: 20px;
-    width: fit-content;
-    padding: 10px 20px;
-    border-radius: 30px;
-}
-
 footer{
     background-color: var(--main-orange);
     color: whitesmoke;
