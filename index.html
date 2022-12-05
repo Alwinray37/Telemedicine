@@ -27,7 +27,7 @@
 </head>
 <body>
     <nav>
-        <a href="index.html">Home</a> <div class="vr"></div>
+        <a href="/index.html">Home</a> <div class="vr"></div>
         <a href="#">All Disorders</a> <div class="vr"></div>
         <a href="#">Contact Me</a>
     </nav>
@@ -41,8 +41,8 @@
             <h1>Telemedicine Services Serving Arizona and Nevada</h1>
             <h3>Telehealth Medicine for Arizona and Nevada</h3>
             <div class="hero-cta">
-                <a href="#" class="cta-btn" id="schedule-btn">Schedule an Appointment</a>
-                <a href="#" class="cta-btn" id="hero-call-now">Call Now!</a>
+                <a href="./pages/schedule.html" class="cta-btn" id="schedule-btn">Schedule an Appointment</a>
+                <a href="tel:" class="cta-btn" id="hero-call-now">Call Now!</a>
             </div>
         </div>
     </section>
@@ -351,6 +351,7 @@ me, and hopefully all four.
             <div class="col col-2">
                 <a href="#">General Anxiety</a>
                 <a href="#">Depression (Mild to Moderate)</a>
+            </div>
         </div>
         <div class="row" id="chronic">
             <div class="col col-1">
@@ -425,11 +426,6 @@ me, and hopefully all four.
 
     
     <section class="scheduler">
-        <!-- Calendly inline widget begin -->
-        <!-- <div class="calendly-inline-widget" data-url="https://calendly.com/alwinray/meeting" style="min-width:320px;height:630px;"></div>
-        <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script> -->
-        <!-- Calendly inline widget end -->
-
         <!-- Calendly badge widget begin -->
         <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
         <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
@@ -450,18 +446,5 @@ me, and hopefully all four.
             <p></p>
         </div>
    </footer>
-   <script>
-    let calendly = document.querySelector('.calendly-badge-widget');
-    const scheduleBtn = document.querySelector('#schedule-btn');
-    const callNow = document.querySelector('#hero-call-now');
-
-    callNow.addEventListener('click', e => alert('btn has been clicked'));
-
-    setTimeout(btnClick(), 1000);
-    function btnClick(){
-        let calendly = document.querySelector('.calendly-badge-content');
-        scheduleBtn.addEventListener('click', e => calendly.click());
-    }
-   </script>
 </body>
 </html>
