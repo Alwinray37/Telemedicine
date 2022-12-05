@@ -105,6 +105,53 @@ nav .vr{
     transition: .5s ease-in-out;
     transform: scale(1.1);
 }
+/* About Section */
+#about{
+    padding: 50px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f5f5f5;
+}
+#about .row{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+#about .col{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+#about h2{
+    margin: 20px 0;
+    text-align: start;
+}
+#about p{
+    text-align: start;
+    margin: 10px;
+}
+#about .card i{
+    width: 100%;
+    font-size: 2em;
+}
+.step .number{
+    height: 30px;
+    width: 30px;
+    background-color: var(--main-orange);
+    color: white;
+    font-family: arial black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+}
+.step h4{
+    text-align: start;
+}
 #jumpNav{
     display: flex;
     height: fit-content;
@@ -194,6 +241,7 @@ hr{
     margin: 0 0 20px 0;
     font-size: 3rem;
     text-shadow: 2px 0 0 #000, 0 -2px 0 #000, 0 2px 0 #000, -2px 0 0 #000;
+    padding: 10px;
 }
 .contentSum p{
     letter-spacing: 1px;
@@ -240,6 +288,7 @@ footer a, footer .contact{
     margin: 10px;
 }
 /* media queries */
+/* ipad */
 @media(min-width: 700px) {
     #hero {
         display: flex;
@@ -261,6 +310,9 @@ footer a, footer .contact{
     }
     #section3 .col-1{
         width: 50%;
+    }
+    #about .row{
+        flex-direction: row;
     }
 }
 @media (min-width: 1000px){
