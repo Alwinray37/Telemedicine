@@ -23,10 +23,19 @@
     <link rel="stylesheet" href="./pageStyle.css">
 </head>
 <body>
-    <nav>
-        <a href="../index.html">Home</a> <div class="vr"></div>
-        <a href="#">All Disorders</a> <div class="vr"></div>
-        <a href="#">Contact Me</a>
+    <nav class="nav-container">
+        <a href="#" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        <div class="logo"><a href="../index.html">Dwight Partner, NP</a></div>
+        <ul>
+            <li><a href="./pages/how-it-works.html">How It Works</a> </li>
+            <li><a href="#">Illnesses Covered</a> </li>
+            <li><a href="#">Payment</a> </li>
+            <li><a href="#">Contact Me</a></li>
+        </ul>
     </nav>
     <!-- Calendly inline widget begin -->
 <div class="calendly-inline-widget" data-url="https://calendly.com/alwinray/meeting?primary_color=05d0eb" style="min-width:320px;height:630px;"></div>
@@ -39,5 +48,14 @@
     margin: 100px 0;
     `)
 </script>
+<script>
+    // for the hamburger menu
+        const toggleButton = document.querySelector('.toggle-button');
+        const navBar = document.querySelector('nav ul');
+        toggleButton.addEventListener('click', e =>{
+            navBar.classList.toggle('active');
+        })
+
+   </script>
 </body>
 </html>
