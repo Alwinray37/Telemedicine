@@ -12,7 +12,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Lato', sans-serif;
 
     /* border: .5px dashed lightgray; */
 }
@@ -34,61 +34,65 @@ a:hover{
     position: absolute;
     top: 1.25rem;
     right: 1rem;
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: space-between;
     width: 30px;
     height: 20px;
-  }
-  .toggle-button .bar{
-    height: 3px;
-    width: 100%;
-    background-color: white;
-    border-radius: 10px;
-  }
-  nav ul{
-    display: none;
-    width: 100%;
-    height: 200px;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-  }
-  nav ul li{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 30px;
-    width: 100%;
-    text-decoration: none;
-  }
-  nav ul.active{
-    display: flex;
-  }
-  nav{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    min-height: 50px;
-    background-color: var(--main-orange);
-  }
-  nav ul li a{
-    text-decoration: none;
-    color: white;
-    font-size: 1.5rem;
-  }
-  nav .logo{
-    width: 100%;
-    display: flex;
-    padding: 20px;
-  }
-  nav .logo a{
-    color: white;
-    font-size: 1.25rem;
-  }
-  
+}
+.toggle-button .bar{
+height: 3px;
+width: 100%;
+background-color: white;
+border-radius: 10px;
+}
+nav{
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+width: 100%;
+min-height: 50px;
+background-color: coral;
+}
+nav ul{
+display: flex;
+width: 100%;
+flex-direction: row;
+align-items: center;
+justify-content: space-around;
+}
+nav ul li{
+display: flex;
+align-items: center;
+justify-content: center;
+height: 30px;
+width: 100%;
+text-decoration: none;
+}
+nav ul.active{
+display: flex;
+}
+
+nav ul li a{
+text-decoration: none;
+color: white;
+font-size: 1rem;
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+nav .logo{
+width: 300px;
+display: flex;
+padding: 20px;
+}
+nav .logo a{
+color: white;
+font-size: 1.25rem;
+}
+
 .header{
     height: 200px;
     padding: 50px 0 0 0;
@@ -169,7 +173,30 @@ footer a{
 }
 
 /* for mobile */
-@media (max-width: 450px){
+@media (max-width: 780px){
+    .toggle-button{
+        display: flex;
+    }
+    nav{
+        flex-direction: column;
+    }
+    nav ul{
+        display: none;
+        flex-direction: column;
+        
+    }
+    nav ul li{
+        height: 50px;
+        width: 100%;
+    }
+    nav a{
+        width: 100%;
+        height: 100%;
+    }
+    nav .logo{
+        width: 100%;
+        padding-left: 50px;
+    }
     .row{
         width: 90%;
     }
