@@ -208,9 +208,6 @@ color: coral;
   color: var(--second-blue);
   text-decoration: none;
 }
-/* Categories Section */
-
-
 
 
 /* #why {
@@ -223,7 +220,7 @@ color: coral;
   border: 1px solid red;
   width: 300px;
   text-align: start;
-}
+} */
 .card{
   text-align: center;
 }
@@ -260,14 +257,10 @@ color: coral;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-} */
+}
 
 /* category links */
-hr{
-  width: 100%;
-  height: 5px;
-  background-color: var(--second-orange);
-}
+
 .arrow{
   border: solid coral;
   border-width: 0 3px 3px 0;
@@ -339,6 +332,34 @@ hr{
 #untreated a{
   color: white;
 }
+
+/* faqs */
+#faq .header{
+  color: var(--second-blue);
+  width: 100%;
+  padding-left: 20px;
+  display: flex;
+  align-items: center;
+  margin: 50px 0 20px 0;
+}
+#faq .row{
+  padding: 10px 20px;
+}
+#faq h2{
+  width: 100%;
+  font-size: 1.5rem;
+  color: coral;
+}
+#faq p{
+  display: none;
+}
+#faq p.active{
+  display: flex;
+  background-color: coral;
+  color: white;
+  padding: 10px;
+  width: 100%;
+}
 footer{
   background-color: var(--footer);
   color: var(--footer-text);
@@ -358,6 +379,42 @@ footer a, footer .contact{
   margin: 10px;
 }
 
+/* ************* How it works ****************** */
+#steps{
+  width: 100%;
+}
+#steps .wrapper{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: white;
+  box-shadow: 0 0 10px 0 ;
+  padding: 20px;
+}
+
+#steps .heading{
+  color: var(--second-blue);
+  font-size: 1.5rem;
+  width: 100%;
+  /* border: 1px red solid; */
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+#steps i{
+  background-color: #0341a4;
+  color: white;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 1rem;
+}
+#steps p{
+  margin: 10px;
+}
 
 /* media queries */
 /* ipad */
@@ -423,6 +480,12 @@ footer a, footer .contact{
     padding: 0;
     margin: auto;
   }
+
+  #need .wrapper{
+    display: flex;
+    flex-direction: row;
+  }
+
 
 }
 /* Desktop view */
