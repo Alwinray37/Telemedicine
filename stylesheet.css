@@ -70,6 +70,7 @@ nav{
   background-color: var(--nav);
   box-shadow: 0 0 5px 0;
   position:fixed;
+  font-weight: bold;
 }
 nav ul li a{
   text-decoration: none;
@@ -81,6 +82,7 @@ nav ul li a{
   display: flex;
   align-items: center;
   justify-content: center;
+  font-weight: bold;
 }
 nav .logo{
   width: 100%;
@@ -259,7 +261,7 @@ color: coral;
   align-items: center;
 }
 
-/* category links */
+/* category links *******************************/
 
 .arrow{
   border: solid coral;
@@ -382,6 +384,7 @@ footer a, footer .contact{
 /* ************* How it works ****************** */
 #steps{
   width: 100%;
+  margin: 0 0 50px 0;
 }
 #steps .wrapper{
   display: flex;
@@ -414,6 +417,46 @@ footer a, footer .contact{
 }
 #steps p{
   margin: 10px;
+}
+#steps h2{
+  color: coral;
+}
+/**************Contact Page ***********************/
+#contact .container{
+  background-color: var(--second-blue);
+  display: flex;
+  flex-direction: column;
+  padding: 50px 20px;
+  gap: 20px;
+}
+#contact h2{
+  color: var(--main-orange);
+  color: coral;
+}
+#contact p{
+  color: white;
+}
+#contact input, #contact textarea{
+  width: 100%;
+  padding: 20px 10px;
+  border-radius: 10px;
+  border: 2px solid black;
+}
+#contact form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+}
+#contact .submit{
+  background-color: coral;
+  color: white;
+  font-size: 2rem;
+  padding: 10px;
+  width: 50%;
+  margin: auto;
+  
 }
 
 /* media queries */
