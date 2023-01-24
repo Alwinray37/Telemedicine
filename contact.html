@@ -47,9 +47,18 @@
             <h2>Contact Us</h2>
             <p>Do you have any questions? Get in touch with Dwight Partner by filling out the form.</p>
         </div>
-        <form action="https://formsubmit.co/dwightthomaspartner@gmail.com" method="POST">
-            <input type="text" name="name" placeholder="Name"><br>
-            <input type="text" name="email" placeholder="Email"><br>
+        <form action="https://formsubmit.co/041e4cfc5f3a8a63ba19f67ace5b7c33" method="POST">
+            <!-- honeypot -->
+            <input type="text" name="_honey" style="display: none;">
+            <!-- disable captcha -->
+            <input type="hidden" name="_captcha" value="false">
+            <!-- do not tamper, set for deployment -->
+            <input type="hidden" name="_next" value="https://telemedicine.house/successPage.html">
+
+            <!-- actual form -->
+            <input type="text" name="name" placeholder="Name" required><br>
+            <input type="tel" id="phone" name="phone" placeholder="Phone #" required><br>
+            <input type="email" name="email" placeholder="Email" required><br>
             <br><textarea name="message" rows="5" cols="40" placeholder="Message"></textarea><br>
             <input class="submit" type="submit" value="Send">
           </form> 
