@@ -341,7 +341,7 @@ For example: There are many different causes of ear pain and it is impossible to
         <div class="wrapper">
         <h2 class="header">FAQ's</h2>
             <div class="row">
-                <h2 class="question">What is Telemedicine <i class="arrow down"></i></h2>
+                <h2 class="question">What is Telemedicine <!--<i class="arrow down"></i>--> </h2>
                 <p class="answer">Telemedicine is a system of providing medical care via the use of telephones (primarily cellular phones) or the Internet. Telemedicine allows certain licensed health care providers to evaluate, diagnose, and treat patients from either short or long distances without leaving their homes.</p>
             </div>
             <div class="row">
@@ -428,23 +428,15 @@ For example: There are many different causes of ear pain and it is impossible to
         })
 
         // for category drop down
-        const arrow = document.querySelectorAll('i'); 
-        // arrow.forEach(e => {
-        //     let p = e.nextElementSibling;
-        //     e.onclick = function(){
-        //         e.classList.toggle('up');
-        //         p.style.display = (p.style.display === 'none') ? 'flex' : 'none';
-        //     };
-            
-
-        // })
+        const arrow = document.querySelectorAll('i');
+        
         const categoryH2 = document.querySelectorAll(' h2');
         categoryH2.forEach(e => {
             let p = e.nextElementSibling;
-            let i = e.querySelector('.arrow');
+            // let i = e.querySelector('.arrow');
             e.style.cursor += 'pointer';
             e.onclick = function(){
-                i.classList.toggle('up');
+                // i.classList.toggle('up');
                 p.classList.toggle('active');
             }
         })

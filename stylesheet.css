@@ -315,13 +315,9 @@ color: coral;
   max-width: 490px;
 }
 #categories .col-2{
-  display: flex;
-  /* flex-direction: column; */
-  align-items: center;
-  justify-content: space-evenly;
-  gap: 20px;
-  flex-wrap: wrap;
-  width: 100%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 10px;
 }
 
 #untreated.row {
@@ -334,7 +330,7 @@ color: coral;
 
 /* faqs */
 #faq {
-  background-color: aliceblue;
+  background-color: whitesmoke;
   padding: 20px 20px 50px 20px;
 }
 #faq .header{
